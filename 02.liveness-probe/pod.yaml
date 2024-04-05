@@ -4,9 +4,10 @@ metadata:
   name: kubia-liveness
 spec:
   containers:
-    - image: edwin/kubia:v2
+    - image: edwin/kubia:fail
       name: kubia
       livenessProbe:
+        periodSeconds: 3
         httpGet:
           path: /
           port: 8080
