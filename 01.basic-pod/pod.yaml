@@ -6,7 +6,7 @@ metadata:
   name: kubia-manual
 spec:
   containers:
-    - image: edwin/kubia:v1
+    - image: edwin/kubia:basic
       imagePullPolicy: IfNotPresent
       name: kubia
       ports:
