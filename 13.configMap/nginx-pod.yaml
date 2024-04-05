@@ -37,4 +37,3 @@ spec:
     - name: config
       configMap:
         name: nginx-config
-        defaultMode: "6600"
