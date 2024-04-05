@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: kubia
 spec:
+  revisionHistoryLimit: 10
   minReadySeconds: 10
   strategy:
     rollingUpdate:

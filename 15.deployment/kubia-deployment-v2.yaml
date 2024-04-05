@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: kubia
 spec:
+  revisionHistoryLimit: 10
   minReadySeconds: 10
   strategy:
     rollingUpdate:
@@ -16,7 +17,7 @@ spec:
         app: kubia
     spec:
       containers:
-        - image: edwin/kubia:v2
+        - image: edwin/kubia:fail
           name: nodejs
           ports:
             - name: http
