@@ -1,2 +1,2 @@
 kubectl create -f rs.yaml
-kubectl exec kubia-z6h5t -- touch /var/ready
+kubectl exec kubia-46s55 -- touch /var/ready
